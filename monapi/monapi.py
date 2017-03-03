@@ -4,7 +4,6 @@
 # create python version -> python 3.4
 # this program is monachat application program interface ver 1.0 / create by ashlee
 
-import re
 import time
 import socket
 
@@ -25,8 +24,8 @@ class monapi(object):
 		self.scl		=	  100
 		self.stat		=	  '通常'
 		self.time		=	  time.time()
-		self.interval	=	  self.time + 20.0
-		self.response   =	  ''.encode('utf-8')
+		self.interval		=	  self.time + 20.0
+		self.response   	=	  ''.encode('utf-8')
 		self.sock		=	  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		return
 
